@@ -1,10 +1,13 @@
 import React from 'react'
-import Profile from './page/Profile'
+import Layout from './layout/Layout'
+
 
 const App = () => {
   return (
     <>
-      <Profile />
+    <div className='min-h-screen bg-black  mx-auto  max-w-8xl'>
+      <Layout/>
+    </div>  
     </>
   )
 }

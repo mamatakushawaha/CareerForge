@@ -11,7 +11,7 @@ import profile from "../assets/image/profile.png";
 
 const Profile = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16">
+    <section className="inset-0 bg-[radial-gradient(circle_at_top,rgba(0,128,128,0.6)_0%,transparent_50%)] text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16">
       
       {/* Left Section */}
       <div className="flex-1 text-center md:text-left space-y-4">
