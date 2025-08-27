@@ -1,6 +1,12 @@
 import React from "react";
 import { Briefcase } from "lucide-react"; // fallback icon if no logo
-
+import witseal from '../assets/Ashwani (1)/Ellipse 1663.png'
+import bigcash from '../assets/Ashwani (1)/Ellipse 1664.png'
+import img3 from '../assets/Ashwani (1)/Ellipse 1665.png'
+import img4 from '../assets/Ashwani (1)/Ellipse 1666.png'
+import img5 from '../assets/Ashwani (1)/Ellipse 1668.png'
+import img6 from '../assets/Ashwani (1)/Ellipse 1669.png'
+import img7 from '../assets/Ashwani (1)/Group 48098597.png'
 const experiences = [
   {
     id: 1,
@@ -8,7 +14,7 @@ const experiences = [
     company: "Witzeal Technologies Pvt. Ltd",
     duration: "Dec 2024 - Present",
     time: "9 mos",
-    logo: "/logos/witzeal.png", // replace with your image
+    logo: witseal,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   },
   {
@@ -17,7 +23,7 @@ const experiences = [
     company: "Witzeal Technologies Pvt. Ltd",
     duration: "Dec 2021 - Dec 2024",
     time: "3 yrs 1 mos",
-    logo: "/logos/bigcash.png",
+    logo: bigcash,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   },
   {
@@ -26,7 +32,7 @@ const experiences = [
     company: "Extraclass",
     duration: "Dec 2019 - Dec 2021",
     time: "2 yrs",
-    logo: "/logos/extraclass.png",
+    logo: img3,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   },
 
@@ -36,7 +42,7 @@ const experiences = [
     company: "Selfstudy",
     duration: "Dec 2015 - Dec 2021",
     time: "6 yrs 5 mos",
-    logo: "/logos/freelance.png",
+    logo: img4,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   },
   {
@@ -45,7 +51,7 @@ const experiences = [
     company: "BXI design",
     duration: "Dec 2013 - Dec 2015",
     time: "1 yr 11 mos",
-    logo: "/logos/freelance.png",
+    logo: img5,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]   bg-clip-text text-transparent",
   },
   {
@@ -54,7 +60,7 @@ const experiences = [
     company: "S.Chand Harcourt(India) Pvt.Ltd.",
     duration: "Aug 2010 - Sep 2023",
     time: "3 yr 3mos",
-    logo: "/logos/freelance.png",
+    logo: img6,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   },
   {
@@ -63,14 +69,14 @@ const experiences = [
     company: "Mabbit Communications Pvt.Ltd.",
     duration: "Aug 2009 - Jul 2010",
     time: "1 yr",
-    logo: "/logos/freelance.png",
+    logo:img7,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
   }
 ];
 
 const CareerJourney = () => {
   return (
-    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) text-white py-16 px-6 md:px-20">
+    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) text-white py-16 px-6 md:px-30">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl text-[#96b1c0] font-bold poppins-thin">
@@ -82,7 +88,7 @@ const CareerJourney = () => {
       </div>
 
       {/* Timeline */}
-      <div className="relative flex flex-col gap-16">
+      <div className="relative flex flex-col gap-2">
       {experiences.map((exp, idx) => (
           <div
             key={exp.id}
@@ -107,13 +113,13 @@ const CareerJourney = () => {
 
             {/* Text */}
             <div className="flex-1">
-              <h3 className={`text-xl font-bold ${exp.highlight}`}>
+              <h3 className={`font-bold text-2xl poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent ${exp.highlight}`}>
                 {exp.role}
               </h3>
-              <p className="text-gray-300">{exp.company}</p>
-              <p className="text-gray-400 text-sm mt-1">
+              <p className="text-[#cadfeb] text-lg">{exp.company}</p>
+              <p className="text-[#cadfeb] text-md mt-1">
                 {exp.duration} •{" "}
-                <span className="text-green-400">{exp.time}</span>
+                <span className="text-[#81ff9f] text-md">{exp.time}</span>
               </p>
             </div>
           </div>

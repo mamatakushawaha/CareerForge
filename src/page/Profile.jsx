@@ -1,15 +1,15 @@
 import React from "react";
 import profile from "../assets/image/profile.png";
-import figma from "../assets/image/figma.png";
-import ai_img from "../assets/image/ai.png";
-import chat from "../assets/image/chat.png";
-import ps_image from "../assets/image/ps_image.png";
-import xd_img from "../assets/image/xd_img.png";
-import animate from "../assets/image/an_image.png"; // if you have animate icon
+import figma from "../assets/ashwani/figma.png";
+import ai_img from "../assets/ashwani/ai_image.png";
+import chat from "../assets/ashwani/chat.png";
+import ps_image from "../assets/ashwani/ps_image.png";
+import xd_img from "../assets/ashwani/xd_image.png";
+import animate from "../assets/ashwani/an_image.png"; // if you have animate icon
 
 const Profile = () => {
   return (
-    <section className="relative bg-[radial-gradient(circle_at_top,rgba(0,128,128,0.6)_0%,transparent_50%)] text-white min-h-screen flex flex-col md:flex-row items-center justify-center gap-2 px-6 md:px-16">
+    <section className="relative bg-[radial-gradient(circle_at_top,rgba(0,128,128,0.6)_0%,transparent_50%)] text-white min-h-screen flex flex-col md:flex-row items-center justify-center gap-2 px-6 md:px-15">
 
       {/* Left Section  className="absolute top-[120px] left-[60px] border-4 border-amber-400 "*/}
       <div className="absolute top-[130px] left-[80px]" >
