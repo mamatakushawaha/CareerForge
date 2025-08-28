@@ -39,7 +39,7 @@ const MentorSection = () => {
         {/* Right Content */}
         <div className="flex w-[700px] flex-col p-4 space-y-4">
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl poppins-thin font-bold poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent">
+          <h1 className="text-4xl p-5 md:text-5xl poppins-thin font-bold poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent">
             <span >Motion artist</span> &{" "}
             <span >Design thinking diploma</span>
           </h1>
@@ -54,7 +54,7 @@ const MentorSection = () => {
         </div>
 
         {/* Apple Icon (right side) */}
-        <div className="absolute right-20 top-[200px] ">
+        <div className="absolute right-20 top-[240px] ">
           <img src={apple} alt="Apple Icon" className="w-18 h-18" />
         </div>
 

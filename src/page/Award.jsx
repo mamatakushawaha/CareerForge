@@ -24,13 +24,13 @@ const Awards = () => {
 
         {/* Heading */}
         <div className="text-center ml-10 md:text-left mb-8 p-2  ">
-          <h2 className="text-4xl md:text-5xl font-bold poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent">
+          <h2 className="text-4xl p-5 md:text-5xl font-bold poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent">
             Awards & Winnings
           </h2>
         </div>
 
         {/* Content */}
-        <div className="w-[420px]  p-4">
+        <div className="w-[420px]  p-5">
           {/* Awards List */}
           <div className=" space-y-8">
             {awards.map((award, idx) => (

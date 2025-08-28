@@ -13,12 +13,12 @@ const links = [
 
 const GraphicDesign = () => {
   return (
-    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) relative text-white py-16 mb-[15px] pl-[127px]">
+    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) relative text-white   pl-[127px]">
 
       {/* Left Icon */}
       {/* <PenTool className="absolute top-6 left-10 text-cyan-400 w-16 h-16 opacity-80" /> */}
       <div>
-        <img src={box} alt="Graphic Design" className="w-28 h-28 absolute top-1/4 left-[80px] z-10 " />
+        <img src={box} alt="Graphic Design" className="w-28 h-28 absolute top-7 left-[100px] z-10 " />
       </div>
       {/* Heading */}
       <div className="w-5xl relative h-[500px] bg-white/10 backdrop-blur-xl rounded-tl-[200px] rounded-bl-2xl p-[60px] mt-[100px] overflow-hidden">

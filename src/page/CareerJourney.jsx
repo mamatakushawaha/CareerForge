@@ -16,6 +16,7 @@ const experiences = [
     time: "9 mos",
     logo: witseal,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no:7
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const experiences = [
     time: "3 yrs 1 mos",
     logo: bigcash,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no:6
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const experiences = [
     time: "2 yrs",
     logo: img3,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no:5
   },
 
   {
@@ -44,6 +47,7 @@ const experiences = [
     time: "6 yrs 5 mos",
     logo: img4,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no:4
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const experiences = [
     time: "1 yr 11 mos",
     logo: img5,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]   bg-clip-text text-transparent",
+    no: 3
   },
   {
     id: 6,
@@ -62,6 +67,7 @@ const experiences = [
     time: "3 yr 3mos",
     logo: img6,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no: 2
   },
   {
     id: 7,
@@ -71,12 +77,13 @@ const experiences = [
     time: "1 yr",
     logo:img7,
     highlight: "bg-gradient-to-r from-[#81ff9f] to-[#0084ff]  bg-clip-text text-transparent",
+    no: 1
   }
 ];
 
 const CareerJourney = () => {
   return (
-    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) text-white py-16 px-6 md:px-30">
+    <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) text-white py-16 px-6 md:px-25">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-xl md:text-4xl text-[#96b1c0] font-bold poppins-thin">
@@ -88,42 +95,89 @@ const CareerJourney = () => {
       </div>
 
       {/* Timeline */}
-      <div className="relative flex flex-col gap-2">
+      <div className="relative flex flex-col  gap-2 space-y-6">
       {experiences.map((exp, idx) => (
-          <div
-            key={exp.id}
-            className={`flex items-center gap-6 md:w-1/2 ${
-              idx % 2 === 0
-                ? "md:flex-row md:self-start"
-                : "md:flex-row-reverse md:self-end"
-            }`}
-          >
-            {/* Logo / Icon */}
-            <div className="relative w-20 h-20 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center shadow-[6px_6px_20px_rgba(0,132,255,0.5)] hover:scale-105 transition-transform">
-              {exp.logo ? (
-                <img
-                  src={exp.logo}
-                  alt={exp.company}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <Briefcase className="w-10 h-10 text-gray-400" />
-              )}
-            </div>
+  <div
+    key={exp.id}
+    className={`flex items-center h-[100px] p-5 gap-6 md:w-[600px] ${
+      idx % 2 === 0
+        ? "md:flex-row md:self-start"
+        : "md:flex-row md:self-end"
+    }`}
+  >
+    {/* Conditional rendering for no = 2 and no = 4 */}
+    {exp.no === 2 || exp.no === 4 || exp.no === 6 ? (
+      <>
+        {/* Number First */}
+        <div className="text-3xl lg:text-7xl font-bold  pr-4 text-white/5 poppins-thin select-none">
+          0{exp.no}
+        </div>
 
-            {/* Text */}
-            <div className="flex-1">
-              <h3 className={`font-bold text-2xl poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent ${exp.highlight}`}>
-                {exp.role}
-              </h3>
-              <p className="text-[#cadfeb] text-lg">{exp.company}</p>
-              <p className="text-[#cadfeb] text-md mt-1">
-                {exp.duration} •{" "}
-                <span className="text-[#81ff9f] text-md">{exp.time}</span>
-              </p>
-            </div>
-          </div>
-        ))}
+        {/* Logo */}
+        <div className="relative w-20 h-20 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center shadow-[6px_6px_20px_rgba(0,132,255,0.5)] hover:scale-105 transition-transform">
+          {exp.logo ? (
+            <img
+              src={exp.logo}
+              alt={exp.company}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <Briefcase className="w-10 h-10 text-gray-400" />
+          )}
+        </div>
+
+        {/* Content */}
+        <div className="flex-1">
+          <h3
+            className={`font-bold text-2xl poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent ${exp.highlight}`}
+          >
+            {exp.role}
+          </h3>
+          <p className="text-[#cadfeb] text-lg">{exp.company}</p>
+          <p className="text-[#cadfeb] text-md mt-1">
+            {exp.duration} •{" "}
+            <span className="text-[#81ff9f] text-md">{exp.time}</span>
+          </p>
+        </div>
+      </>
+    ) : (
+      <>
+        {/* Logo */}
+        <div className="relative w-20 h-20 rounded-full overflow-hidden bg-gray-800 flex items-center justify-center shadow-[6px_6px_20px_rgba(0,132,255,0.5)] hover:scale-105 transition-transform">
+          {exp.logo ? (
+            <img
+              src={exp.logo}
+              alt={exp.company}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <Briefcase className="w-10 h-10 text-gray-400" />
+          )}
+        </div>
+
+        {/* Content */}
+        <div className="flex-1">
+          <h3
+            className={`font-bold text-2xl poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent ${exp.highlight}`}
+          >
+            {exp.role}
+          </h3>
+          <p className="text-[#cadfeb] text-lg">{exp.company}</p>
+          <p className="text-[#cadfeb] text-md mt-1">
+            {exp.duration} •{" "}
+            <span className="text-[#81ff9f] text-md">{exp.time}</span>
+          </p>
+        </div>
+
+        {/* Number */}
+        <div className="text-3xl lg:text-7xl ml-[10px] font-bold  pr-4 text-white/8 poppins-thin select-none">
+          0{exp.no}
+        </div>
+      </>
+    )}
+  </div>
+))}
+
       </div>
 
       
