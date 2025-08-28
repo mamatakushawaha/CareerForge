@@ -4,15 +4,15 @@ import { ChevronRight, PenTool } from "lucide-react";
 import box from '../assets/Ashwani (2)/pen.png'
 
 const links = [
-  { label: "BigCash App Design", href: "#", },
-  { label: "School App for Teacher ", href: "#" },
-  { label: "Parent App", href: "#" },
-  { label: "E Commerce Website", href: "#" },
-  {label:"Social Media App",href:"#"},
-  {label:"User experience",href:"#"},
+  { label: "BigCash App Design", href: "https://www.figma.com/design/PWq1oRgQqjIHJapYUqS8tY/BigCash-App-Design--Copy-?t=hFZvaodBYrzlZQnd-0", },
+  { label: "School App for Teacher ", href: "https://www.figma.com/design/pNEzvw6HrOuiRBLp0agl1P/Teacher-App-Final--V01--Copy-?node-id=0-1&p=f&t=vtI2hse6VkfSFPXl-0" },
+  { label: "Parent App", href: "https://www.figma.com/design/kDWQgTHYBayeAPGMUgewUo/Parent-App?t=5iBPoRQmoL39U6CY-0" },
+  { label: "E Commerce Website", href: "https://www.figma.com/design/T4LhXbEsJJBWWWhjzRevMo/e-commerce-Website?node-id=0-1&t=vTsWGZxrMfwxc2h2-0" },
+  {label:"Social Media App",href:"https://www.figma.com/design/poDiTPTCNTq5uXuKdF2Qfa/UI-Update--8-Jan-2023?node-id=0-1&p=f&t=Lg5FxpwOFdpXXar5-0"},
+  {label:"User experience",href:"https://drive.google.com/file/d/1q-6GZVDrqaXQJyvpAqhIi-1a6KsrlKne/view"},
 
-  { label: "Ziploan UX Improvement", href: "#" },
-  {label:"Planpie UI/UX",href:"#"},
+  { label: "Ziploan UX Improvement", href: "https://drive.google.com/file/d/17tgup1GVXz95TTln_QCJushg200q53bt/view" },
+  {label:"Planpie UI/UX",href:"https://www.figma.com/design/IPYsDMwCCQAVKL9Tbeg8xr/Planpie-V2--Copy-?node-id=0-1&t=SCE8G7a4aQHFCsSH-1&fuid=1413793920570971097"},
 ];
 
 const Ui_page = () => {

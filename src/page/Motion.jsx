@@ -28,7 +28,7 @@ const Motion = () => {
 
                 <div className="flex gap-3 p-5">
                     <div>
-                        <a href="#" className="poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent font-semibold flex items-center text-2xl underline decoration-[#0084ff]">Explainer video_01</a>
+                        <a href="https://drive.google.com/file/d/1fblhxeKxTma72hUor2Ahhts-JdkRo00n/view" className="poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent font-semibold flex items-center text-2xl underline decoration-[#0084ff]">Explainer video_01</a>
                     </div>
                     <ChevronRight className="h-7 w-7 ml-2 text-[#0084ff] " />
 
@@ -39,7 +39,7 @@ const Motion = () => {
                 <div className="flex gap-3 p-5">
                     
                     <div>
-                        <a href="#" className="poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent font-semibold flex items-center text-2xl underline decoration-[#0084ff]">Check Youtube channel</a>
+                        <a href="https://www.youtube.com/watch?v=mv6C99LCcxg&list=PL3udCY46DrhfJ-7ihX5a4IzCDR1DprqFr" className="poppins-thin bg-gradient-to-r from-[#81ff9f] to-[#0084ff] bg-clip-text text-transparent font-semibold flex items-center text-2xl underline decoration-[#0084ff]">Check Youtube channel</a>
                     </div>
                     <ChevronRight className="h-7 w-7 ml-2 text-[#0084ff] " />
                 </div>

@@ -18,9 +18,9 @@ const Layout = () => {
         <CareerJourney />
         <AwardsWinnings />
         <MentorSection />
-        <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%)  text-white mt-20  pl-[127px]">
+        <section className="bg-gradient(180deg,#000000_0%,#082231_33.48%) text-white mt-20 mb-[80px]  pl-[127px]">
 
-          <div className="flex items-center  gap-[70px]">
+          <div className="flex items-center  gap-[50px]">
             {/* Graduation Cap Icon */}
             <div>
               <img src={cap} alt="Graduation Cap" className="w-38 h-38" />

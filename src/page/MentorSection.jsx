@@ -11,7 +11,7 @@ const mentors = [
     description:
       "Bhushan Verma, based in Delhi, India, is currently a Founder and C.E.O at GearCraftSolutions, (a creative design hub). Bhushan Verma brings experience from previous roles at IVS School Of Design, MassCoMedia, Technology 9 Labs and Netcradle India Pvt Ltd. Bhushan Verma holds a 1997 - 1998 +2 in Commerce @ ASVJ. Sr. Sec. School. With a robust skill set that includes Animation, Maya, Storyboarding, Computer Animation, Character Animation and more",
     img: mentor2,
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/bhushan-verma-038a71a/",
   },
   {
     name: "Vinay Vikaram Singh",
@@ -19,7 +19,7 @@ const mentors = [
     description:
       "A creative learner and founder @twinbrains in the field of CGI for advertising, Animation and Gaming over the past 18+ years.",
     img: mentor1,
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/vsvinayvikram/?originalSubdomain=in",
   },
 ];
 
