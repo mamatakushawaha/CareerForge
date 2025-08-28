@@ -9,7 +9,7 @@ import animate from "../assets/ashwani/an_image.png"; // if you have animate ico
 
 const Profile = () => {
   return (
-    <section className="relative bg-[radial-gradient(circle_at_top,rgba(0,128,128,0.6)_0%,transparent_50%)] text-white min-h-screen flex flex-col md:flex-row items-center justify-center gap-2 px-6 md:px-15">
+    <section className="relative bg-[radial-gradient(circle_at_top,rgba(0,128,128,0.6)_0%,transparent_50%)] text-white  h-[600px] flex flex-col md:flex-row items-center justify-center gap-2 px-6 md:px-15">
 
       {/* Left Section  className="absolute top-[120px] left-[60px] border-4 border-amber-400 "*/}
       <div className="absolute top-[130px] left-[80px]" >
